@@ -7,7 +7,7 @@ import { NavbarComponent } from '@/shared/components/navbar/navbar.component';
   imports: [RouterOutlet, NavbarComponent],
   template: `
     <navbar />
-    <div class="max-w-2xl m-auto mt-16 px-2">
+    <div class="max-w-4xl m-auto mt-16 px-2">
       <router-outlet />
     </div>
   `,

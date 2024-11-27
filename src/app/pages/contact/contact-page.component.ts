@@ -5,7 +5,6 @@ import { Meta, Title } from '@angular/platform-browser';
   selector: 'contact',
   imports: [],
   templateUrl: './contact-page.component.html',
-  styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export default class ContactPageComponent implements OnInit {

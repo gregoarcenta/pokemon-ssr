@@ -5,7 +5,6 @@ import { Meta, Title } from '@angular/platform-browser';
   selector: 'pricing',
   imports: [],
   templateUrl: './pricing-page.component.html',
-  styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export default class PricingPageComponent implements OnInit {
