@@ -1,10 +1,11 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'navbar',
   imports: [
     RouterLink,
+    RouterLinkActive,
   ],
   templateUrl: './navbar.component.html',
   styles: ``,
