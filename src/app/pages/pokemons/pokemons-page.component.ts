@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, inject, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, OnInit, signal } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { PokemonListComponent } from '@/pokemons/components/pokemon-list/pokemon-list.component';
 
@@ -6,11 +6,13 @@ import { PokemonListComponent } from '@/pokemons/components/pokemon-list/pokemon
   selector: 'pokemons',
   imports: [
     PokemonListComponent,
+
   ],
   templateUrl: './pokemons-page.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export default class PokemonsPageComponent implements OnInit {
+  public hasPokemons = signal(false);
   private title = inject(Title);
   private meta = inject(Meta);
 

@@ -10,5 +10,4 @@ import { PokemonCardComponent } from '@/pokemons/components/pokemon-card/pokemon
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PokemonListComponent {
-
 }
