@@ -11,6 +11,7 @@
       "schematics": {
         "@schematics/angular:component": {
           "prefix": "",
+          "exportDefault": true,
           "inlineStyle": true,
           "changeDetection": "OnPush"
         }
@@ -22,6 +23,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "externalDependencies": [
+              ""
+            ],
             "outputPath": "dist/pokemon-ssr",
             "index": "src/index.html",
             "browser": "src/main.ts",
