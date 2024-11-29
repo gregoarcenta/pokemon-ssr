@@ -12,6 +12,4 @@ import { NavbarComponent } from '@/shared/components/navbar/navbar.component';
     </div>
   `,
 })
-export class AppComponent {
-  title = 'pokemon-ssr';
-}
+export class AppComponent {}
